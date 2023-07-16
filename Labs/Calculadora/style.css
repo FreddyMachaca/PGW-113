@@ -1,0 +1,194 @@
+/* Estilo general */
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Estilo de la pantalla de visualización */
+  .display-screen {
+    background-color: #000000;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  #display {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+  }
+  
+  /* Estilo de los botones */
+  .buttons {
+    text-align: center;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+  }
+  
+  td {
+    padding: 0;
+  }
+  
+  button {
+    width: 70px;
+    height: 70px;
+    background-color: #121212;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #292929;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo de los botones de operador */
+  .btn-operator {
+    background-color: #ff8a65;
+  }
+  
+  .btn-operator:hover {
+    background-color: #ff7043;
+  }
+  
+  .btn-operator:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón igual */
+  .btn-equal {
+    height: 140px;
+    font-size: 32px;
+  }
+  
+  .btn-equal:hover {
+    background-color: #ff8a65;
+    transform: scale(1.05);
+  }
+  
+  .btn-equal:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón de retroceso */
+  #backspace {
+    font-size: 28px;
+  }
+  
+  #backspace:hover {
+    background-color: #ff8a65;
+    transform: scale(1.05);
+  }
+  
+  #backspace:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo de los números */
+  .btn-number {
+    background-color: #2c2c2c;
+  }
+  
+  .btn-number:hover {
+    background-color: #454545;
+    transform: scale(1.05);
+  }
+  
+  .btn-number:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón de borrar */
+  #clear {
+    background-color: #e74c3c;
+  }
+  
+  #clear:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  #clear:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón decimal */
+  #decimal {
+    font-size: 28px;
+  }
+  
+  #decimal:hover {
+    background-color: #454545;
+    transform: scale(1.05);
+  }
+  
+  #decimal:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón cero */
+  #zero {
+    width: 140px;
+    font-size: 28px;
+  }
+  
+  #zero:hover {
+    background-color: #454545;
+    transform: scale(1.05);
+  }
+  
+  #zero:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilo del botón doble cero */
+  #double-zero {
+    font-size: 28px;
+  }
+  
+  #double-zero:hover {
+    background-color: #454545;
+    transform: scale(1.05);
+  }
+  
+  #double-zero:active {
+    transform: scale(0.95);
+  }
+  
