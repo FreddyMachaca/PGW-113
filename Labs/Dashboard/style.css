@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de encabezado */
+  header {
+    background-color: #111;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  /* Estilos de navegación */
+  nav {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos de contenido */
+  #contenido {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  /* Estilos de pie de página */
+  footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos específicos */
+  #contenido h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #00ff99;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00ff99;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .cta-button:hover {
+    background-color: #00e68a;
+  }
+  
+  .featured-section {
+    background-image: url('cyberpunk-bg.jpg');
+    background-size: cover;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .featured-section h2 {
+    font-size: 64px;
+    margin-bottom: 30px;
+    color: #00ff99;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .featured-section p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos de animación */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease;
+  }
+  
