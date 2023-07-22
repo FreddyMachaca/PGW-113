@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #36393F; 
+    color: #FFFFFF; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #7289DA; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #7289DA; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #36393F; 
+    color: #FFFFFF; 
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #7289DA;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #677BC4; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+    border: 2px solid #7289DA; 
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #36393F; 
+    color: #FFFFFF; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: #7289DA; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
