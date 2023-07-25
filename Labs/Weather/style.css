@@ -1,0 +1,132 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.container{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: #161414;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+input{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 50px;
+    background: #161414;
+    border: 1px solid #333;
+    border-radius: 25px;
+    outline: none;
+    padding: 0 20px 0 50px;
+    color: #fff;
+}
+input:focus{
+    border: 1px solid #fff;
+}
+#btnBuscar{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 50px;
+    background: #161414;
+    color: #fff;
+}
+#btnBuscar:hover{
+    background: #333;
+    cursor: pointer;
+}
+#datosClima{
+    position: absolute;
+    flex-direction: column;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 120px;
+    background: #161414;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+#datosClima h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+#datosClima p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+#datosClima img{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        height: 550px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    input{
+        height: 40px;
+    }
+    #btnBuscar{
+        height: 40px;
+        top: 42%;
+
+    }
+    #datosClima{
+        top: 75%;
+        padding: 100px 0px;
+        height: 200px;
+
+    }
+
+}
+@media (max-width: 477px) {
+    .container{
+        height: 700px;
+    }
+    #datosClima{
+        position: relative;
+        top: 60%;
+    }
+}
