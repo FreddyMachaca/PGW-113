@@ -1,0 +1,73 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #111;
+    color: #fff;
+}
+
+form{
+    width: 400px;
+    background: #333;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form .form-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+}
+input:focus{
+    border-bottom: 1px solid #03a9f4;
+}
+button{
+    margin-top: 20px;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background: #0169a9;
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
