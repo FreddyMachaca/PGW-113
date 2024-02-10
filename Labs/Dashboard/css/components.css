@@ -28,7 +28,7 @@
 }
 
 .item-digital {
-  flex-grow: 1;
+  width: 100%;
   max-width: 38.4rem;
 }
 
@@ -55,39 +55,81 @@
   padding: 2.4rem;
 }
 
-.card-post .tag{
-    display: inline-block;
-    padding: 8px 22px;
-    border-radius: 100px;
-    background: rgba(255, 255, 255, 0.10);
-    color: var(--color-gray-100, #F5F6FA);
-    font-family: 'Sora', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: 1.26px;
-    text-transform: uppercase;
-    margin-bottom: 4.5rem;
+.card-post .tag {
+  display: inline-block;
+  padding: 8px 22px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-gray-100, #f5f6fa);
+  font-family: "Sora", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
 }
 
-.card-post .image{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 6.4rem;
+.card-post .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.4rem;
 }
 
-.card-post .text{
-    width: 100%;
-    max-width: 50.8rem;
+.card-post .text {
+  width: 100%;
+  max-width: 50.8rem;
 }
 
-.card-post .text h6{
- margin-bottom: 0.8rem;
+.card-post .text h6 {
+  margin-bottom: 0.8rem;
 }
 
-.card-post .text p{
+.card-post .text p {
+  font-size: 1.6rem;
+  color: var(--gray-600);
+}
+
+@media (max-width: 991px) {
+  .item-digital {
+    text-align: center;
+  }
+
+  .item-digital .icon {
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+  }
+
+  .item-digital .info p br {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .item-digital .info p {
+    font-size: 1.8rem;
+    max-width: 31.9rem;
+  }
+
+  .card-post {
+    padding: 1.6rem;
+  }
+
+  .card-post .image{
+    margin-bottom: 5.4rem;
+  }
+
+  .card-post .text h6{
     font-size: 1.6rem;
-    color: var(--gray-600);
+  }
+
+  .card-post .text p{
+    font-size: 1.4rem;
+  }
+
+  .s-art-front .all{
+    gap: 3.2rem;
+  }
 }
